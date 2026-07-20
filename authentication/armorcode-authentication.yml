@@ -1,0 +1,24 @@
+generated: '2026-07-18'
+method: searched
+source: https://app.armorcode.com/v3/api-docs
+summary:
+  types: [http]
+  scheme: bearer
+  api_key_in: [header]
+  oauth2_flows: []
+schemes:
+- name: bearerAuth
+  type: http
+  scheme: bearer
+  in: header
+  header: Authorization
+  description: >-
+    The ArmorCode REST API requires a bearer API token in the Authorization
+    header. Requesting the Spring springdoc OpenAPI document at
+    https://app.armorcode.com/v3/api-docs without a token returns HTTP 401,
+    confirming a token-gated API. Tokens are provisioned from the authenticated
+    ArmorCode application (app.armorcode.com). EU tenants use eu.armorcode.com.
+  sources: [https://app.armorcode.com/v3/api-docs]
+notes:
+- No public OpenAPI/securitySchemes could be retrieved (auth-gated); auth model asserted from the live 401 response and ArmorCode's API-token model.
+- No OAuth2 authorization-server metadata found at /.well-known/oauth-authorization-server or /openid-configuration (HTTP 403 on app host).
