@@ -1,0 +1,24 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.armorcode.com/security
+standards:
+- id: soc2-type2
+  conforms: true
+  evidence: "www.armorcode.com/security states ArmorCode has attained SOC 2 Type 2 compliance and attestation"
+- id: tls1.3
+  conforms: true
+  evidence: "app/marketing hosts negotiate TLSv1.3 with HSTS max-age=31536000; includeSubDomains"
+- id: iso-27001
+  conforms: false
+  evidence: "not named on the public /security page"
+- id: pci-dss
+  conforms: false
+- id: hipaa
+  conforms: false
+- id: fedramp
+  conforms: false
+- id: oauth2
+  conforms: false
+  evidence: "API uses bearer API tokens (Spring springdoc /v3/api-docs returns 401); no public OAuth2 authorization-server metadata found"
+notes:
+- Conformance asserted from the public security page only; ArmorCode's API OpenAPI (app.armorcode.com/v3/api-docs) is auth-gated and not publicly retrievable.

@@ -1,0 +1,20 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.armorcode.com/security
+probe: true
+url: https://www.armorcode.com/security
+certifications:
+- SOC 2 Type 2
+summary: >-
+  ArmorCode publishes its security posture on the /security page rather than a
+  standalone trust portal. The vanity host trust.armorcode.com 301-redirects to
+  the marketing homepage (no dedicated trust center). The /security page states
+  ArmorCode has attained SOC 2 Type 2 compliance and attestation, and documents
+  256-bit SSL/TLS encryption (ECDHE_RSA key exchange), tenant isolation with
+  separate data partitions, and key-management systems.
+evidence:
+- source: https://www.armorcode.com/security
+  keywords: [soc 2 type 2, compliance, attestation, tenant isolation, encryption]
+notes:
+- trust.armorcode.com returns HTTP 301 -> https://www.armorcode.com/ (no standalone trust center)
+- Only SOC 2 Type 2 is named; no public ISO 27001 / PCI DSS / HIPAA / FedRAMP / GDPR claim on this page

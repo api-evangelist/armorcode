@@ -1,8 +1,28 @@
 aid: armorcode
 name: ArmorCode
-description: 'ArmorCode is a company surfaced as a portfolio company of sierra-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: security. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: >-
+  ArmorCode is a unified exposure and application security posture management (ASPM)
+  platform that consolidates vulnerability and security findings from 350+ security
+  tools and scanners into a single control plane. It uses a Context Risk Graph and
+  agentic AI workflows (Anya agents) to prioritize risk and automate remediation
+  across application, cloud, software supply-chain, and AI security. ArmorCode
+  exposes a REST API on app.armorcode.com (US) and eu.armorcode.com (EU) for
+  programmatic access to findings, integrations, and remediation workflows, secured
+  with bearer API tokens. Originally surfaced as a Sierra Ventures portfolio company
+  and enriched here from ArmorCode's public developer and trust surfaces.
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://www.armorcode.com/wp-content/uploads/2025/11/ArmorCode_default-thumb_R2_updated-11-11-25.png
 url: https://raw.githubusercontent.com/api-evangelist/armorcode/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,11 +32,32 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Security
-apis: []
+- Application Security
+- Vulnerability Management
+- ASPM
+- Exposure Management
+- DevSecOps
+- Compliance
+- API
+apis:
+- name: ArmorCode API
+  description: >-
+    ArmorCode's REST API for programmatic access to findings, integrations, and
+    remediation workflows across the unified exposure-management platform. Secured
+    with bearer API tokens provisioned from the ArmorCode application.
+  humanURL: https://www.armorcode.com/integrations
+  baseURL: https://app.armorcode.com
+  tags:
+  - Security
+  - Vulnerability Management
+  - API
+  properties:
+  - type: Authentication
+    url: authentication/armorcode-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -24,4 +65,41 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://armorcode.com/
+  url: https://www.armorcode.com/
+- type: Portal
+  url: https://app.armorcode.com/
+- type: Login
+  url: https://app.armorcode.com/#/login
+- type: Blog
+  url: https://www.armorcode.com/blog
+- type: Support
+  url: https://www.armorcode.com/support
+- type: TermsOfService
+  url: https://www.armorcode.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.armorcode.com/privacy-policy
+- type: StatusPage
+  url: https://status.armorcode.com/
+- type: Security
+  url: https://www.armorcode.com/security
+- type: Compliance
+  url: https://www.armorcode.com/security
+- type: TrustCenter
+  url: security/armorcode-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/armorcode-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/armorcode-domain-security.yml
+- type: Conformance
+  url: conformance/armorcode-conformance.yml
+- type: Authentication
+  url: authentication/armorcode-authentication.yml
+- type: Lifecycle
+  url: lifecycle/armorcode-lifecycle.yml
+- type: LLMsTxt
+  url: llms/armorcode-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

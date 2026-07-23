@@ -1,0 +1,29 @@
+generated: '2026-07-18'
+method: searched
+source: https://status.armorcode.com/
+status_page: https://status.armorcode.com/
+status_provider: Atlassian Statuspage
+status_feeds:
+  rss: https://status.armorcode.com/history.rss
+  atom: https://status.armorcode.com/history.atom
+deployments:
+- region: US
+  portal: https://app.armorcode.com
+  components: [Portal, Authentication and User Management, Data Processing, API Gateway]
+- region: EU
+  portal: https://eu.armorcode.com
+  components: [Portal, Authentication and User Management, Data Processing, API Gateway]
+versioning:
+  scheme: uri-path
+  current: v1
+  note: "API served under app.armorcode.com; springdoc OpenAPI at /v3/api-docs (auth-gated, HTTP 401). Public version/deprecation policy not published."
+deprecation:
+  policy_url: null
+  sunset_header: null
+  note: "No public deprecation policy or RFC 8594 Sunset/Deprecation header support documented."
+sla:
+  url: null
+  observed_uptime: "99.96%-100% over trailing 90 days (per status page components)"
+notes:
+- Status page reports separate US (app.armorcode.com) and EU (eu.armorcode.com) API Gateway components.
+- No public changelog / release-notes page was found (support KB is access-restricted, HTTP 403).
