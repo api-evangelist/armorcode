@@ -2,6 +2,7 @@ generated: '2026-10-14'
 method: searched
 checked:
 - crowdstrike/integrations/crowdstrike-integration-edges.yml
+- https://marketplace.atlassian.com/
 source:
 - crowdstrike/integrations/crowdstrike-integration-edges.yml
 edges:
@@ -21,3 +22,19 @@ edges:
   listing_count: 1
   detected: '2026-10-14'
   detected_by: mirror-platform-listings.py
+- partner_name: Atlassian Marketplace
+  partner: atlassian
+  partner_match: aggregator
+  type: marketplace
+  marketplace: atlassian
+  channel: partner-built
+  relationship: platform-app
+  direction: third-party
+  evidence: https://marketplace.atlassian.com/vendors/1224825/armorcode-inc
+  listing_count: 1
+  apps:
+  - ArmorCode Connect
+  publisher_name: ArmorCode Inc
+  detected_by: sweep-devtools.py
+  detected: '2026-10-19'
+marketplace_apps: []
