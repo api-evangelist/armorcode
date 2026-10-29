@@ -64,6 +64,93 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-ArmorCode is a company surfaced as a portfolio company of sierra-ventures and added to the API Evangelist network as a stub for enrichment. Sector: security. This profile is a lead awaiting the enrichment pipeline.
+ArmorCode is a unified exposure and application security posture management (ASPM) platform that consolidates vulnerability and security findings from 350+ security tools and scanners into a single control plane. It uses a Context Risk Graph and agentic AI workflows (Anya agents) to prioritize risk and automate remediation across application, cloud, software supply-chain, and AI security. ArmorCode exposes a REST API on app.armorcode.com (US) and eu.armorcode.com (EU) for programmatic access to findings, integrations, and remediation workflows, secured with bearer API tokens. Originally surfaced as a Sierra Ventures portfolio company and enriched here from ArmorCode's public developer and trust surfaces.
 
-Backed by: sierra-ventures — https://armorcode.com/
+**Areas:** Company · Security · Application Security · Vulnerability Management · ASPM · Exposure Management · DevSecOps · Compliance
+
+## ArmorCode on APIs.io
+
+Everything profiled for ArmorCode is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/armorcode/](https://apis.io/providers/armorcode/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [ArmorCode API](https://apis.io/apis/armorcode/armorcode-api/) — ArmorCode's REST API for programmatic access to findings, integrations, and remediation workflows across the unified exposure-management platform. Secured…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (4)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Armorcode Authentication](https://apis.io/security/armorcode/armorcode-authentication/)
+- [Armorcode Domain Security](https://apis.io/security/armorcode/armorcode-domain-security/)
+- [Armorcode Trust Center](https://apis.io/security/armorcode/armorcode-trust-center/)
+- [Armorcode Vulnerability Disclosure](https://apis.io/security/armorcode/armorcode-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.armorcode.com/)
+- [Support](https://www.armorcode.com/support)
+- [Blog](https://www.armorcode.com/blog)
+- [Security](https://www.armorcode.com/security)
+- [Compliance](https://www.armorcode.com/security)
+- [Terms of service](https://www.armorcode.com/terms-of-use)
+- [Privacy policy](https://www.armorcode.com/privacy-policy)
+- [Status](https://status.armorcode.com/)
+
+## API Evangelist rating
+
+**Kin Score 30.4** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 28.6 |
+| Access clarity | 43.4 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 35.3** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/armorcode/](https://apis.io/providers/armorcode/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for ArmorCode: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/armorcode/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
